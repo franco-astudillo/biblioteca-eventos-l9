@@ -1,3 +1,4 @@
+import { StreamingModule } from './streaming/streaming.module.js';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { CartasMuertasModule } from './mensajeria/consumidores/cartas-muertas.module.js';
@@ -17,6 +18,7 @@ import { SaludController } from './salud.controller.js';
     NotificacionesModule,
     CorreosModule,
     CartasMuertasModule,
+    StreamingModule,
   ],
   controllers: [SaludController],
 })
